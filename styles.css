@@ -55,21 +55,13 @@ body {
   padding: 0;
   margin: 0;
 }
-#logoPlacement{
-  display: flex;
-  width: 100%;
-  height: 82px;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
 #navContainer{
   display: flex;
   width: 100%;
   height: 82px;
   position: fixed;
   top: 0;
-  z-index: 50;
+  z-index: 2;
   background-color: #3E3013;
   opacity: 35%;
 }
@@ -81,7 +73,15 @@ body {
   position: fixed;
   height: 82px;
   top: 0;
-  z-index: 50;
+  z-index: 2;
+  margin-left: 50px;
+}
+#logo{
+  height: 82px;
+  position: fixed;
+  left: 1%;
+  top: 0;
+  z-index: 2;
 }
 .navButton{
   background-color: #1D3514;
@@ -90,12 +90,12 @@ body {
   border: none;
   height: 60px;
   width: 125px;
-  z-index: 100;
   font-size: 20px;
 }
 .navButton:hover {
   background-color: #AFE9D3;
   color: #3E3013;
+  transition: 0.5s;
 }
 #titleArea{
   display: flex;
@@ -106,12 +106,13 @@ body {
   width: 100%;
   margin-top: -82px;
   height: 763px;
+  z-index: -10;
 }
 #title{
   position: absolute;
   color: #FFFDFA;
   text-align: center;
-  z-index: 30;
+  z-index: 0;
 }
 
 
@@ -276,12 +277,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background: url('images/mountain.png') center/cover no-repeat;
+  min-height: 500px;
+  margin-bottom: 5%;
 }
 #contact{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 20px;
+  margin-top: 320px;
 }
 .contactInfo{
   font-size: 16px;
@@ -296,9 +301,7 @@ body {
 }
 #logoFooter{
   width: 6%;
+  margin-top: 10px;
+  margin-bottom: -20px;
   z-index: 10;
-}
-#mountainSketch{
-  width: 100%;
-  z-index: -50;
 }
