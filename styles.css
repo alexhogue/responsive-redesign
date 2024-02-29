@@ -345,13 +345,18 @@ body {
   margin-left: -12%;
   min-width: 300px;
 }
+label{
+  font-size: 16px;
+  font-family: 'GoodSansLight';
+}
 .textInput{
   background-color: #E8F6FD;
   border-color: #8ED1F3;
   border-radius: 15px;
   height: 40px;
   min-width: 300px;
-  margin-top: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 #submit{
   background-color: #325227;
