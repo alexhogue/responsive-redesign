@@ -164,6 +164,7 @@ body {
 #title{
   position: absolute;
   color: #FFFDFA;
+  text-shadow: 3px 3px 2px #3E3013;
   text-align: center;
   z-index: 0;
   margin-bottom: 6%;
