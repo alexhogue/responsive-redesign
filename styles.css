@@ -1,3 +1,12 @@
+:root {
+  /* color variable definitions: */
+  --main-brown: #3E3013;
+  --button-hover: #AFE9D3;
+  --main-green: #325227;
+  --main-red: #D6440A;
+  --main-white: #FFFDFA;
+}
+
 @font-face {
   font-family: 'GeographMedium'; 
   src: url('typefaces/Geograph-Medium.otf'); 
@@ -19,43 +28,37 @@
   src: url('typefaces/GoodSans-Light.otf'); 
 }
 
-@media only screen and (max-width: 715px) { 
+@media only screen and (max-width: 600px) { 
+/* remove nav buttons for mobile; replaced with menu icon */
 .navButton{
   display: none;
 }
+/*font size adjustments for mobile*/
 h1{
   font-size: 48px;
-  font-family: 'GeographMedium';
+  font-family: 'GeographMedium', sans-serif;
 }
 h2{
   font-size: 32px;
-  font-family: 'GeographRegular'; 
-  color: #3E3013;
+  font-family: 'GeographRegular', sans-serif; 
+  color: var(--main-brown);
 }
 h3{
   font-size: 24px;
-  font-family: 'GoodSansRegular';
+  font-family: 'GoodSansRegular', sans-serif;
 }
 h4{
   font-size: 20px;
-  font-family: 'GoodSansRegular';
+  font-family: 'GoodSansRegular', sans-serif;
 }
 p{
   font-size: 16px;
-  font-family: 'GoodSansLight';
+  font-family: 'GoodSansLight', sans-serif;
   line-height: 30px;
-}
-h5{
-  font-size: 16px;
-  font-family: 'GoodSansLight';
-}
-button{
-  font-size: 20px;
-  font-family: 'GoodSansMedium';
 }
 input {
   font-size: 16px;
-  font-family: 'GoodSansLight';
+  font-family: 'GoodSansLight', sans-serif;
   text-indent: 12px;
 }
 #navBar{
@@ -67,41 +70,36 @@ input {
 }
 
 
-@media only screen and (min-width: 715px) {
+@media only screen and (min-width: 600px) {
 h1{
   font-size: 6.5vw;
-  font-family: 'GeographMedium';
+  font-family: 'GeographMedium', sans-serif;
 }
 h2{
   font-size: 50px;
-  font-family: 'GeographRegular'; 
-  color: #3E3013;
+  font-family: 'GeographRegular', sans-serif; 
+  color: var(--main-brown);
 }
 h3{
   font-size: 28px;
-  font-family: 'GoodSansRegular';
-  
+  font-family: 'GoodSansRegular', sans-serif;
 }
 h4{
   font-size: 24px;
-  font-family: 'GoodSansRegular';
+  font-family: 'GoodSansRegular', sans-serif;
   line-height: 36px;
 }
 p{
   font-size: 18px;
-  font-family: 'GoodSansLight';
-}
-h5{
-  font-size: 16px;
-  font-family: 'GoodSansLight';
+  font-family: 'GoodSansLight', sans-serif;
 }
 button{
   font-size: 20px;
-  font-family: 'GoodSansMedium';
+  font-family: 'GoodSansMedium', sans-serif;
 }
 input {
   font-size: 16px;
-  font-family: 'GoodSansLight';
+  font-family: 'GoodSansLight', sans-serif;
   text-indent: 12px;
 }
 #menu {
@@ -113,8 +111,9 @@ input {
 }
 
 body {
-  background-color: #FFFDFA;
+  background-color: var(--main-white);
   margin: 0;
+  padding: 0;
 }
 #navBar{
   display: flex;
@@ -136,7 +135,7 @@ body {
 }
 .navButton{
   background-color: #1D3514;
-  color: #FFFDFA;
+  color: var(--main-white);
   border-radius: 25px;
   border: none;
   height: 60px;
@@ -145,16 +144,15 @@ body {
   font-size: 20px;
 }
 .navButton:hover {
-  background-color: #AFE9D3;
-  color: #3E3013;
+  background-color: var(--button-hover);
+  color: var(--main-brown);
   transition: 0.5s;
 }
 #titleArea{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('images/main_picture.png') center/cover no-repeat;
-  /* background-size: 200vh, 150vw; */
+  background: url('images/main_picture.png') center/cover no-repeat; /* main background image */
   min-width: 350px;
   width: 100%;
   margin-top: -82px;
@@ -163,14 +161,13 @@ body {
 }
 #title{
   position: absolute;
-  color: #FFFDFA;
-  text-shadow: 3px 3px 2px #3E3013;
+  color: var(--main-white);
+  text-shadow: 3px 3px 2px var(--main-brown);
   text-align: center;
   z-index: 0;
   margin-bottom: 6%;
   max-width: 600px;
 }
-
 
 #whatWeDo{
   display: flex;
@@ -178,7 +175,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 8%;
-  /* padding: 10%; */
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
@@ -190,7 +186,7 @@ body {
 }
 #intro{
   font-size: 20px;
-  color: #3E3013;
+  color: var(--main-brown);
   line-height: 42px;
   max-width: 600px;
   min-width: 350px;
@@ -198,7 +194,7 @@ body {
 #learnMoreColumn{
   display: flex;
   flex-direction: column;
-  color: #3E3013;
+  color: var(--main-brown);
   max-width: 450px;
   min-width: 350px;
   margin-top: 5%;
@@ -207,9 +203,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #325227;
+  background-color: var(--main-green);
   margin-top: 3%;
-  color: #FFFDFA;
+  color: var(--main-white);
   border: none;
   border-radius: 15px;
   min-height: 45px;
@@ -218,8 +214,8 @@ body {
   text-indent: 12px;
 }
 .aboutButton:hover {
-  background-color: #AFE9D3;
-  color: #3E3013;
+  background-color: var(--button-hover);
+  color: var(--main-brown);
   transition: 0.5s;
 }
 
@@ -228,7 +224,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 6%;
-  /* padding: 10%; */
   margin-top: 8%;
   margin-left: 10%;
   margin-right: 10%;
@@ -237,7 +232,7 @@ body {
 #campersImage{
   margin-top: 10%;
   min-width: 350px;
-
+  width: 50%;
 }
 #textColumn2{
   display: flex;
@@ -250,16 +245,16 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
-  background-color: #D6440A;
-  color: #FFFDFA;
-  border-color:#D6440A;
+  background-color: var(--main-red);
+  color: var(--main-white);
+  border-color:var(--main-red);
   border-radius: 25px;
   min-height: 135px;
   min-width: 350px;
 }
 .programButton:hover{
-  background-color: #FFFDFA;
-  color: #D6440A;
+  background-color: var(--main-white);
+  color: var(--main-red);
   transition: 0.5s;
 }
 .programTitle{
@@ -274,8 +269,7 @@ body {
 }
 
 #whatMakesUsUnique{
-  /* padding: 10%; */
-  color: #3E3013;
+  color: var(--main-brown);
   margin-top: 8%;
   margin-left: 10%;
   margin-right: 10%;
@@ -301,13 +295,13 @@ body {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 35px;
+  margin-bottom: 10px;
 }
 .displayBody{
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
-
 
 #getInvolved{
   display: flex;
@@ -315,7 +309,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 24%;
-  color: #3E3013;
+  color: var(--main-brown);
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -327,18 +321,18 @@ body {
   min-width: 350px;
 }
 #donateButton{
-  background-color: #D6440A;
+  background-color: var(--main-red);
   height: 70px;
   margin-top: 12px;
-  border-color: #D6440A;
+  border-color: var(--main-red);
   border-radius: 25px;
-  color: #FFFDFA;
+  color: var(--main-white);
   width: 200px;
 }
 #donateButton:hover{
-  background-color: #FFFDFA;
-  color: #D6440A;
-  border-color: #D6440A;
+  background-color: var(--main-white);
+  color: var(--main-red);
+  border-color: var(--main-red);
   transition: 0.5s;
 }
 #signupColumn{
@@ -360,8 +354,8 @@ label{
   margin-bottom: 10px;
 }
 #submit{
-  background-color: #325227;
-  color: #FFFDFA;
+  background-color: var(--main-green);
+  color: var(--main-white);
   height: 60px;
   margin-top: 24px;
   border: none;
@@ -369,8 +363,8 @@ label{
   min-width: 150px;
 }
 #submit:hover{
-  background-color: #AFE9D3;
-  color: #3E3013;
+  background-color: var(--button-hover);
+  color: var(--main-brown);
   transition: 0.5s;
 }
 
@@ -380,7 +374,6 @@ label{
   align-items: center;
   justify-content: space-evenly;
   background: url('images/mountain.png') center/cover no-repeat;
-  /* background-size: 200vh, 150vw; */
   min-height: 550px;
   margin-bottom: 5%;
 }
@@ -388,7 +381,7 @@ label{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 15px;
   margin-top: 320px;
 }
 .contactInfo{
@@ -396,16 +389,16 @@ label{
   background-color: transparent;
   text-decoration: underline;
   border: none;
-  color: #3E3013;
+  color: var(--main-brown);
 }
 .contactInfo:focus{
-  color:#AFE9D3;
+  color:var(--button-hover);
   transition: 0.3s;
 }
 #logoFooter{
   width: 6%;
   min-width: 80px;
-  margin-top: 10px;
-  margin-bottom: -20px;
+  margin-top: -5px;
+  margin-bottom: -30px;
   z-index: 10;
 }
