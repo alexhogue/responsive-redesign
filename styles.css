@@ -248,6 +248,7 @@ body {
   background-color: var(--main-red);
   color: var(--main-white);
   border-color:var(--main-red);
+  text-shadow: 1px 1px 0.5px var(--main-brown);
   border-radius: 25px;
   min-height: 135px;
   min-width: 350px;
@@ -255,6 +256,7 @@ body {
 .programButton:hover{
   background-color: var(--main-white);
   color: var(--main-red);
+  text-shadow: 0.5px 0.5px 0.5px var(--main-brown);
   transition: 0.5s;
 }
 .programTitle{
@@ -324,6 +326,7 @@ body {
   background-color: var(--main-red);
   height: 70px;
   margin-top: 12px;
+  text-shadow: 1px 1px 0.5px var(--main-brown);
   border-color: var(--main-red);
   border-radius: 25px;
   color: var(--main-white);
@@ -333,6 +336,7 @@ body {
   background-color: var(--main-white);
   color: var(--main-red);
   border-color: var(--main-red);
+  text-shadow: 0.5px 0.5px 0.5px var(--main-brown);
   transition: 0.5s;
 }
 #signupColumn{
