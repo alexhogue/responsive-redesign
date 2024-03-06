@@ -162,11 +162,18 @@ body {
 #title{
   position: absolute;
   color: var(--main-white);
-  text-shadow: 3px 3px 2px var(--main-brown);
+  text-shadow: 3.2px 3.2px 1px var(--main-brown);
   text-align: center;
-  z-index: 0;
-  margin-bottom: 6%;
-  max-width: 600px;
+  padding:0.4px;
+  margin-bottom: 12%;
+  max-width: 530px;
+  max-height: 200px;
+
+}
+#titleText{
+  background-color: #3e301365;
+  border-radius: 25px;
+
 }
 
 #whatWeDo{
@@ -410,4 +417,7 @@ label{
 }
 #footerText{
   color: var(--main-brown);
+  /* give the text more contrast: */
+  text-shadow: 1px 1px 0px var(--main-white);
+  -webkit-text-stroke: .2px rgb(255, 255, 255);
 }
