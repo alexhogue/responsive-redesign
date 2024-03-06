@@ -3,7 +3,7 @@
   --main-brown: #3E3013;
   --button-hover: #AFE9D3;
   --main-green: #325227;
-  --main-red: #D6440A;
+  --main-red: #ab3506;
   --main-white: #FFFDFA;
 }
 
@@ -261,6 +261,7 @@ body {
 }
 .programTitle{
   text-indent: 12px;
+  font-size: 22px;
 }
 .line{
   margin-left: 5%;
@@ -294,10 +295,11 @@ body {
   border-radius: 25px;
 }
 .displayHeading{
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 35px;
   margin-bottom: 10px;
+  font-size: 22px;
 }
 .displayBody{
   margin-left: 15px;
