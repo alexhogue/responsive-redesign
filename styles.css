@@ -162,16 +162,16 @@ body {
 #title{
   position: absolute;
   color: var(--main-white);
-  text-shadow: 3.2px 3.2px 1px var(--main-brown);
+  text-shadow: 3.3px 3.3px 1px var(--main-brown);
   text-align: center;
   padding:0.4px;
-  margin-bottom: 12%;
+  margin-bottom: 18%;
   max-width: 530px;
   max-height: 200px;
 
 }
 #titleText{
-  background-color: #3e301365;
+  /* background-color: #3e301365; */
   border-radius: 25px;
 
 }
